@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:id="@+id/txtRefCode"
+            android:layout_width="80dp"
+            android:textAlignment="textEnd"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="AFSGH"
+            android:textColor="@color/hijau1"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/txtTanggalOrder"
+            android:layout_width="80dp"
+            android:textAlignment="textEnd"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="6/6/2021"
+            android:textColor="@color/hijau1"
+            android:textSize="12dp"
+            android:layout_marginTop="-8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="25dp">
+
+        <TextView
+            android:id="@+id/txtCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="Giany Carolin"
+            android:textColor="@color/hijau2"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/txtCustomerTelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="08123456789"
+            android:textColor="@color/hijau2"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lokasi \t\t\t:  "
+                android:textSize="13dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/hijau3"/>
+
+            <TextView
+                android:id="@+id/txtLokasiOrder"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Muara Karang "
+                android:textColor="@color/hijau3"
+                android:textSize="13dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Layanan \t:  "
+                android:textSize="13dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/hijau3"/>
+
+            <TextView
+                android:id="@+id/txtLayanan"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Dine In"
+                android:textColor="@color/hijau3"
+                android:textSize="13dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order \t\t\t:  "
+                android:textSize="13dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/hijau3"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txtOrder"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="5 Soft Drink, 2 Mie Polos, 20 dumpling , 3 mantao goreng, 20 ikan bakar rica "
+                android:textColor="@color/hijau3"
+                android:textSize="13dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total \t\t\t\t:  "
+                android:textSize="13dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/hijau3"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="50.000"
+                android:textColor="@color/hijau3"
+                android:textSize="13dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

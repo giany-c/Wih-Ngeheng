@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listLocation">
+
+    <ListView
+        android:id="@+id/listMenu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/putih1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/hijau1"
+        android:clickable="true"
+        android:src="@drawable/plus"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/putih1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/footerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/homeAdminBar"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:onClick="homeAdminBar"
+                app:srcCompat="@drawable/logohomeitam" />
+
+            <ImageView
+                android:id="@+id/menuAdminBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="menuAdminBar"
+                app:srcCompat="@drawable/logomenuijopjg" />
+
+            <ImageView
+                android:id="@+id/employeeAdminBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="employeeAdminBar"
+                app:srcCompat="@drawable/employeeitam" />
+
+            <ImageView
+                android:id="@+id/locationAdminBar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="locationAdminBar"
+                app:srcCompat="@drawable/locationitam" />
+
+            <ImageView
+                android:id="@+id/orderAdminBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="orderAdminBar"
+                app:srcCompat="@drawable/logoorderitam" />
+
+            <ImageView
+                android:id="@+id/profileAdminBar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="profileAdminBar"
+                app:srcCompat="@drawable/profileitam" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

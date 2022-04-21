@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.projekmobile.wihngeheng">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WihNgeheng"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".FormOrder"></activity>
+        <activity android:name=".CodeRef" />
+        <activity android:name=".cekOrder" />
+        <activity android:name=".listOrder" />
+        <activity android:name=".editReservation" />
+        <activity android:name=".listReservation" />
+        <activity android:name=".addReservation" />
+        <activity android:name=".orderAdmin" />
+        <activity android:name=".AdminProfile" />
+        <activity android:name=".Employee" />
+        <activity android:name=".listEmployee" />
+        <activity android:name=".editEmployee" />
+        <activity android:name=".addEmployee" />
+        <activity android:name=".editLocation" />
+        <activity android:name=".listLocation" />
+        <activity android:name=".addLocation" />
+        <activity android:name=".editMenu" />
+        <activity android:name=".addMenu" />
+        <activity android:name=".listMenu" />
+        <activity android:name=".AdminHome" />
+        <activity android:name=".MenuDescription" />
+        <activity android:name=".Cart" />
+        <activity android:name=".LogIn" />
+        <activity android:name=".Register" />
+        <activity android:name=".Home" />
+        <activity android:name=".Cover">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Profile" />
+        <activity android:name=".Menu" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
